@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-</head>
+    <title>WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz
+</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz. Homepage featuring HTML, CSS, and JavaScript projects.">
+    <meta name="author" content="Andrei Villapaz">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <body>
-    <h1>WDD 131 - Andrei Villapaz</h1>
+    <header>
+        <span id="course-title">WDD 131: Dynamic web Fundamentals</span>
+
+        <nav>
+            <ul>
+                <li><a href="https://ph.linkedin.com/in/andrei-villapaz">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p3#p3">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Andrei Enos F. Villapaz</h1>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hi! My name is Andrei. I am from Cavite, Philippines.
+                    My hobbies are playing guitar, gaming, and going on adventures.
+                    I enjoy exploring new places, learning new things and living life with passion.
+
+                    Aside from hobbies, I value spending  time with my family and friends.
+                    I believe life should be lived with balance - growing spiritually, mentally, and
+                    physically while having fun along the way.
+                </p>
+                <img src="images/profile.JPG" alt="Profile Picture">
+            </div>
+
+            <h3>Cavite Philippines</h3>
+            <hr>
+            <div class="philippines">
+                <div class="flag-box">
+                    <img src="images/philippine-flag.jpg" alt="Official Flag of Philippines">
+                    <p class="caption">Official Flag of the Philippines</p>
+                </div>
+                <div class="cavite-info">
+                    <p>
+                        Cavite is historically significant as the <em>"Land of the Brave"</em>, 
+                        the birthplace of the Philippine Declaration of Independence, 
+                        and a key location in the Philippine Revolution.  
+                        It is also known for its vibrant culture and traditions, rich culinary heritage, 
+                        growing infrastructure, and beautiful natural landscapes. 
+                        Cavite continues to play an important role in the Philippines' history and development.
+                    </p>
+                    <p>
+                        Today Cavite is one of the most dynamic provinces in the Philippines.
+                        It is home to historical landmarks such as the <strong>Aguinaldo Shrine</strong> in Kawit,
+                        where independence was declared, and te scening <strong>Tagaytay Ridge</strong>
+                        overlooking Taal Volcano.
+                    </p>
+                    <p>
+                        Caviteños also take pride in their cuisine — from <em>pansit pusit</em> (black squid noodles) 
+                        to <em>bibingkoy</em> (glutinous rice cake), the province offers unique flavors 
+                        that reflect its rich culture and heritage.
+                    </p>
+                    <p>
+                        Beyond history and food, Cavite has grown into an important residential and industrial hub, 
+                        balancing urban progress with natural beauty. It is a place where tradition meets modern living.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.byupathway.edu/">BYU-Pathway</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/?lang=eng">The Church of Jesus Christ of Latter-Day Saints</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Andrei Enos Flores Villapaz | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

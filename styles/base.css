@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+    background: #033F63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav {
+    background: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.about-me {
+    flex: 3;
+}
+
+.about-me hr {
+    width: 60%;
+    margin: 8px auto 20px;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.about-me h2 {
+  text-align: center;
+  background: #033F63;
+  color: white;
+  padding: 10px;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 15px;
+}
+
+.about-me h3 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-content img {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.philippines {
+    display: flex;
+    gap: 20px;
+    margin: 20px auto;
+    align-items: center;
+    max-width: 85%;
+}
+
+
+.flag-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-box img {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.flag-box .caption {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.cavite-info p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.resources {
+    flex: 1;
+}
+
+.resources h2 {
+    text-align: center;
+    background: #033F63;
+    color: white;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 15px;
+}
+
+.resources ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resources ul li {
+    margin: 8px 0;
+}
+
+.resources ul li a {
+    text-decoration: none;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #033F63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer .last-modified {
+    color: #f4d35e;
+    margin-top: 5px;
+}
