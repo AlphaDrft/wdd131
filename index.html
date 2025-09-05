@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -68,7 +70,7 @@
                     </p>
                     <p>
                         Caviteños also take pride in their cuisine — from <em>pansit pusit</em> (black squid noodles) 
-                        to <em>bibingkoy</em> (glutinous rice cake), the province offers unique flavors 
+                        to <em>bibingka</em> (glutinous rice cake), the province offers unique flavors 
                         that reflect its rich culture and heritage.
                     </p>
                     <p>
@@ -95,10 +97,5 @@
         <p>&copy; <span id="currentyear"></span> | Andrei Enos Flores Villapaz | Philippines</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script>
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-    </script>
 </body>
 </html>
