@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Base styles */
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  background: #f8f9fa;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header */
 header {
     background: #033F63;
     color: white;
@@ -23,35 +26,14 @@ header {
 #course-title {
     display: block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
     color: white;
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    gap: 20px;
-    padding: 20px;
-}
-
-main h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
+/* Navigation */
 nav {
     background: #333;
 }
@@ -73,25 +55,41 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     display: block;
+    transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #444;
     border-radius: 4px;
-    transition: background 0.3s ease;
 }
 
+/* Main layout (Grid) */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+main h1 {
+    grid-column: 1 / -1; /* span full width */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+/* Cards */
 .card {
     background: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.about-me {
-    flex: 3;
-}
-
+/* About Me Section */
 .about-me hr {
     width: 60%;
     margin: 8px auto 20px;
@@ -100,20 +98,22 @@ nav ul li a:hover {
 }
 
 .about-me h2 {
-  text-align: center;
-  background: #033F63;
-  color: white;
-  padding: 10px;
-  border-radius: 6px 6px 0 0;
-  margin-bottom: 15px;
+    text-align: center;
+    background: #033F63;
+    color: white;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 15px;
+    font-family: 'Merriweather', serif;
 }
 
 .about-me h3 {
     text-align: center;
     margin: 5px 0;
+    font-family: 'Merriweather', serif;
 }
 
-.about-content{
+.about-content {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -127,16 +127,19 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
+/* Philippines Section */
 .philippines {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: 20px auto;
     align-items: center;
-    max-width: 85%;
+    max-width: 95%;
 }
 
-
 .flag-box {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -158,14 +161,12 @@ nav ul li a:hover {
 }
 
 .cavite-info p {
+    flex: 1;
     margin-bottom: 10px;
     text-align: justify;
 }
 
-.resources {
-    flex: 1;
-}
-
+/* Resources Section */
 .resources h2 {
     text-align: center;
     background: #033F63;
@@ -173,6 +174,7 @@ nav ul li a:hover {
     padding: 10px;
     border-radius: 6px 6px 0 0;
     margin-bottom: 15px;
+    font-family: 'Merriweather', serif;
 }
 
 .resources ul {
@@ -186,12 +188,16 @@ nav ul li a:hover {
 
 .resources ul li a {
     text-decoration: none;
+    color: #033F63;
+    transition: color 0.3s;
 }
 
 .resources ul li a:hover {
     text-decoration: underline;
+    color: #005f99;
 }
 
+/* Footer */
 footer {
     background: #033F63;
     color: white;
@@ -200,7 +206,7 @@ footer {
     font-size: 0.9em;
 }
 
-footer .last-modified {
+#lastModified {
     color: #f4d35e;
     margin-top: 5px;
 }

@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz
-</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz. Homepage featuring HTML, CSS, and JavaScript projects.">
     <meta name="author" content="Andrei Villapaz">
-    <link rel="stylesheet" href="styles/base.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+</head>
 <body>
     <header>
-        <span id="course-title">WDD 131: Dynamic web Fundamentals</span>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
 
         <nav>
             <ul>
@@ -24,6 +26,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h1>Andrei Enos F. Villapaz</h1>
         <section class="card about-me">
@@ -60,7 +63,7 @@
                     <p>
                         Today Cavite is one of the most dynamic provinces in the Philippines.
                         It is home to historical landmarks such as the <strong>Aguinaldo Shrine</strong> in Kawit,
-                        where independence was declared, and te scening <strong>Tagaytay Ridge</strong>
+                        where independence was declared, and the scenic <strong>Tagaytay Ridge</strong>
                         overlooking Taal Volcano.
                     </p>
                     <p>
@@ -70,7 +73,7 @@
                     </p>
                     <p>
                         Beyond history and food, Cavite has grown into an important residential and industrial hub, 
-                        balancing urban progress with natural beauty. It is a place where tradition meets modern living.
+                        balancing urban progress with natural beauty. It's a place where tradition meets modern living.
                     </p>
                 </div>
             </div>
@@ -93,5 +96,9 @@
         <p id="lastModified"></p>
     </footer>
 
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
 </body>
 </html>
