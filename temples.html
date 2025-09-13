@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
-  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz. Examples of temples in the Philippines.">
-  <meta name="author" content="Andrei Villapaz">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Andrei Enos F. Villapaz. Examples of temples in the Philippines.">
+    <meta name="author" content="Andrei Villapaz">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-  <link rel="icon" href="images/site-icon.png" type="image/png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
-  <script src="scripts/getdates.js" defer></script>
-  <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="icon" href="images/site-icon.png" type="image/png" sizes="32x32">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <h1 class="site-title">Temple Album</h1>
-    <button id="menu">&#9776;</button>
-    <nav class="navigation">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1 class="site-title">Temple Album</h1>
+        <button id="menu">&#9776;</button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h2>Temple Album - Home</h2>
+    <main>
+        <h2 class="section-title">Philippines Temple Collection</h2>
+        <div class="album-container">
+            <figure>
+                <img src="images/philippines-alabang-temple.jpg" alt="Alabang Temple">
+                <figcaption>Alabang Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-manila-temple.jpg" alt="Manila Temple">
+                <figcaption>Manila Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-cebu-temple.jpg" alt="Cebu Temple">
+                <figcaption>Cebu Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-davao-temple.jpg" alt="Davao Temple">
+                <figcaption>Davao Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-bacolod-temple.jpg" alt="Bacolod Temple">
+                <figcaption>Bacolod Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-urdaneta-temple.jpg" alt="Urdaneta Temple">
+                <figcaption>Urdaneta Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-cagayan-de-oro-temple.jpg" alt="Cagayan De Oro Temple">
+                <figcaption>Cagayan De Oro Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-tacloban-temple.jpg" alt="Tacloban Temple">
+                <figcaption>Tacloban Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/philippines-tuguegarao-temple.jpg" alt="Tuguegarao Temple">
+                <figcaption>Tuguegarao Philippines</figcaption>
+            </figure>
+        </div>
+    </main>
 
-    <section class="album-container">
-      <figure>
-        <img src="images/philippines-alabang-temple.jpg" alt="Alabang Temple">
-        <figcaption>Alabang Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-manila-temple.jpg" alt="Manila Temple">
-        <figcaption>Manila Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-cebu-temple.jpg" alt="Cebu Temple">
-        <figcaption>Cebu Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-davao-temple.jpg" alt="Davao Temple">
-        <figcaption>Davao Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-bacolod-temple.jpg" alt="Bacolod Temple">
-        <figcaption>Bacolod Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-urdaneta-temple.jpg" alt="Urdaneta Temple">
-        <figcaption>Urdaneta Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-cagayan-de-oro-temple.jpg" alt="Cagayan De Oro Temple">
-        <figcaption>Cagayan De Oro Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-tacloban-temple.jpg" alt="Tacloban Temple">
-        <figcaption>Tacloban Philippines</figcaption>
-      </figure>
-      <figure>
-        <img src="images/philippines-tuguegarao-temple.jpg" alt="Tuguegarao Temple">
-        <figcaption>Tuguegarao Philippines</figcaption>
-      </figure>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; <span id="currentyear"></span> | Andrei Enos Flores Villapaz | Philippines</p>
-    <p id="lastModified"></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Andrei Enos Flores Villapaz | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
