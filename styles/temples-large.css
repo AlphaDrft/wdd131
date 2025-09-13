@@ -1,0 +1,55 @@
+@media (min-width: 900px) {
+
+  #menu {
+    display: none;
+  }
+
+
+  .navigation {
+    display: flex !important;
+    align-items: center;
+    background: none;
+    padding: 0;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    padding: 1.5rem 3rem;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+
+  .album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; 
+  }
+
+  .album-container figure {
+    flex: 1 1 250px;
+    max-width: 300px;
+  }
+}
