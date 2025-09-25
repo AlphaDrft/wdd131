@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #00bcd4;
+    --secondary-color: #4caf50;
+    --text-color: #2c3e50;
+    --light-bg: #f0f9f9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +12,10 @@
 }
 
 body {
-    max-width: 1200px;
-    margin: 0 auto;
     font-family: "Merriweather", serif;
     line-height: 1.6;
-    background-color: #f0f9f9;
-    color: #2c3e50;
+    background: var(--light-bg);
+    color: var(--text-color);
     padding: 1rem;
 }
 
@@ -64,9 +69,18 @@ footer {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
-    background: #4caf50;
+    background: var(--secondary-color);
     color: white;
     border-radius: 8px;
+    position: relative;
+}
+
+footer::after {
+    content: " 🌺 Aloha! 🌺";
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff3cd;
 }
 
 @media (max-width: 700px) {
