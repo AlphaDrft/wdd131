@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawaii - Country Page</title>
+    <meta name="description" content="Discover Hawaii: A tropical paradise with beautiful beaches, culture, and warm weather.">
+    <meta name="author" content="Andrei Enos Flores Villapaz">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Hawaii</h1>
+    </header>
+
+    <picture>
+        <source srcset="images/hawaii-large.webp" media="(min-width: 800px)">
+        <source srcset="images/hawaii-medium.webp" media="(min-width: 500px)">
+        <img src="images/hawaii-small.webp" alt="Beautiful Hawaiian Mountain" class="hero">
+    </picture>
+
+    <main>
+        <section class="info">
+            <h2>About Hawaii</h2>
+            <p>
+                Hawaii is a tropical paradise in the Pacific Ocean, known for its golden beaches,
+                lush volcanoes, and unique cultural traditions. Visitors enjoy surfing, snorkeling,
+                and exploring the island's breathtaking landscapes and vibrant communities.
+            </p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li>Temperature: <span id="temp">28</span> °C</li>
+                <li>Wind Speed: <span id="wind">20</span> km/h</li>
+                <li>Wind Chill: <span id="chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Andrei Enos Flores Villapaz</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
