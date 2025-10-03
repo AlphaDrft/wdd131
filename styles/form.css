@@ -1,8 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+}
+
+h1, h2, h3, legend {
+  font-family: 'Merriweather', serif;
 }
 
 header, footer {
@@ -33,6 +37,7 @@ fieldset {
 input, select, textarea {
   padding: 0.5rem;
   font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   max-width: 100%;
 }
@@ -48,6 +53,8 @@ input[type="submit"] {
   padding: 0.75rem;
   cursor: pointer;
   border-radius: 4px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 input[type="submit"]:hover {
