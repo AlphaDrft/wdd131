@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" name="rating" value="1" required> 1</label>
+        <label><input type="radio" name="rating" value="2"> 2</label>
+        <label><input type="radio" name="rating" value="3"> 3</label>
+        <label><input type="radio" name="rating" value="4"> 4</label>
+        <label><input type="radio" name="rating" value="5"> 5</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" name="features" value="Design"> Design</label>
+        <label><input type="checkbox" name="features" value="Value for Money"> Value for Money</label>
+      </fieldset>
+
+      <label for="writtenReview">Written Review:</label>
+      <textarea id="writtenReview" name="writtenReview" rows="4" cols="30"></textarea>
+
+      <label for="userName">Your Name (optional):</label>
+      <input type="text" id="userName" name="userName">
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Andrei Enos F. Villapaz</p>
+  </footer>
+</body>
+</html>
