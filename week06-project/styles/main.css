@@ -1,80 +1,394 @@
+:root {
+  --primary-color: #2C5F2D;
+  --accent-color: #B5651D;
+  --light-bg: #F5F5F5;
+  --text-color: #333333;
+  --max-width: 1100px;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', san-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-bg);
 }
 
 h1, h2, h3 {
-    font-family: 'Merriweather', serif;
-    color: #2c5f2d;
+  font-family: "Merriweather", serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===== Header & Navigation ===== */
 header {
-    background-color: #2c5f2d;
-    color: #f5f5f5;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-.logo {
-    width: 80px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav h1 {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-nav a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: "Roboto", sans-serif;
 }
 
-nav a:hover {
-    color: #b5651d;
+nav ul li a:hover {
+  color: var(--accent-color);
 }
 
+/* ===== Hero Section ===== */
 .hero {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: url(../images/hero.jpg);
+  position: relative;
+  width: 100%;
+  min-height: 55vh; /* takes 70% of the screen height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-.featured {
-    padding: 2rem;
-    text-align: center;
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preserves proportions */
+  object-position: center; /* keeps the center of the photo visible */
+  z-index: 0;
 }
 
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45); /* subtle overlay */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+  line-height: 1.5;
+}
+
+.hero .btn {
+  background-color: #B5651D;
+  color: white;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #8d4d17;
+}
+
+/* Adjust hero size for small screens */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 45vh;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+
+/* ===== About Section ===== */
+.about {
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* ===== Featured Destinations ===== */
 .destinations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+  background-color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
-article {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.destinations h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-footer {
-    background-color: #2c5f2d;
-    color: #f5f5f5;
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.destination {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.destination:hover {
+  transform: translateY(-6px);
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination h3 {
+  color: var(--primary-color);
+  margin: 0.8rem 0 0.4rem;
+}
+
+.destination p {
+  padding: 0 1rem 1rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+/* ===== Featured / Food & Culture / Travel Tips ===== */
+.food-preview, 
+.tips-preview,
+.featured {
+  text-align: center;
+  margin: 4rem auto;
+  max-width: var(--max-width);
+  padding: 0 1rem;
+}
+
+.food-preview h2,
+.tips-preview h2,
+.featured h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.food-preview p,
+.tips-preview p,
+.featured p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0.5rem auto 2rem;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.preview-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.preview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.preview-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.preview-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin: 0.8rem 0 0.3rem;
+}
+
+.preview-card p {
+  padding: 0 1rem 1.5rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+/* ===== Destinations Page Spacing & Styling ===== */
+.destinations-section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destinations-section h2 {
     text-align: center;
-    padding: 1rem;
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    color: #2C5F2D;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #B5651D;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.destinations-section .preview-grid {
     margin-top: 2rem;
+}
+
+/* Buttons */
+.btn, .btn-submit {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.8rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover, .btn-submit:hover {
+  background-color: #9c4b14; /* Slightly darker warm brown */
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .preview-card img {
+    height: 180px;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn, .btn-submit {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .destination-grid, .preview-grid {
+    grid-template-columns: 1fr;
+  }
 }
