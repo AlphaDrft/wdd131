@@ -110,14 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
       bestSeason: "December to April",
       image: "images/capisaan-cave.jpg",
     },
-    {
-      name: "Lower Magat Eco-Tourism Park",
-      location: "Diadi, Nueva Vizcaya",
-      description:
-        "An eco-friendly park with lakeside cabins, boating, and wildlife ideal for family trips and relaxation.",
-      bestSeason: "All year round",
-      image: "images/magat-dam.jpeg",
-    },
   ];
 
   const filteredDestinations = featuredDestinations.filter((dest) =>
