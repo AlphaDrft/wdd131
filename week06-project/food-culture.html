@@ -16,22 +16,31 @@
         rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
 </head>
 
 <body>
-    <header>
+     <header>
         <nav class="navbar">
-            <h1 class="logo">Discover Nueva Vizcaya</h1>
-            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Discover Nueva Vizcaya Logo">
+                <span>Discover Nueva Vizcaya</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="food-culture.html">Food & Culture</a></li>
                 <li><a href="travel-tips.html">Travel Tips</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
     
@@ -40,7 +49,7 @@
             <img src="images/food-hero.jpg" alt="Traditional Vizcayan dishes on a table" class="hero-img" loading="lazy">
             <div class="hero-content">
                 <h1>Taste and Traditions of Nueva Vizcaya</h1>
-                <p>From sweet rice delicacies to indigenous festuvals - explore the flavors and culture that make Vizcaya unqiue.</p>
+                <p>From sweet rice delicacies to indigenous festivals - explore the flavors and culture that make Vizcaya unqiue.</p>
             </div>
         </section>
 
@@ -124,6 +133,7 @@
         <p>&copy; 2025 Discover Nueva Vizcaya | Designed by Andrei Enos F. Villapaz</p>
     </footer>
 
+    <button id="scrollTopBtn" title="Go to top">↑</button>
     <script src="scripts/main.js"></script>
 </body>
 </html>

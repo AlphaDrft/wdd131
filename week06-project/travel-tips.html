@@ -16,28 +16,37 @@
         rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">Discover Nueva Vizcaya</h1>
-            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Discover Nueva Vizcaya Logo">
+                <span>Discover Nueva Vizcaya</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="food-culture.html">Food & Culture</a></li>
                 <li><a href="travel-tips.html">Travel Tips</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <img src="images/travel-tips-hero.jpg" alt="Traditional Vizcayan dishes on a table" class="hero-img" loading="lazy">
+            <img src="images/travel-tips-hero.jpg" alt="Traveler exploring Nueva Vizcaya" class="hero-img" loading="lazy">
             <div class="hero-content">
                 <h1>Travel Smart, Explore Freely</h1>
                 <p>Plan your adventure through Nueva Vizcaya with these essential travel tips, guides, and local insights.</p>
@@ -57,7 +66,7 @@
 
 
                 <article class="preview-card">
-                    <img src="images/travel-car.jpg" alt="Scenic road in Nueva Vizcaya" loading="lazy">
+                    <img src="images/travel-car.jpg" alt="Scenic drive throughout Nueva Vizcaya" loading="lazy">
                     <h3>By Private Car</h3>
                     <p>Driving offers flexibility and scenic routes through Dalton Pass. Make sure your vehicle is road-ready for mountain drives.</p>
                 </article>
@@ -71,7 +80,7 @@
         </section>
 
         <section class="destinations-section">
-            <h2>Best  Time to Visit</h2>
+            <h2>Best Time to Visit</h2>
             <p>Plan your visit based on what kind of experience you want — from cool mountain breezes to vibrant festivals.</p>
 
             <div class="preview-grid">
@@ -83,7 +92,7 @@
 
                 <article class="preview-card">
                     <img src="images/panagyaman-festival.jpg" alt="Festival Parade" loading="lazy">
-                    <h3>Dry Season (April-May)</h3>
+                    <h3>Festival Season (April-May)</h3>
                     <p>Join local celebrations like the Panagyaman Festival — a colorful showcase of culture, music, and thanksgiving.</p>
                 </article>
 
@@ -133,7 +142,7 @@
 
                 <article class="preview-card">
                     <img src="images/travel-signal.jpg" alt="Phone signal in rural area" loading="lazy">
-                    <h3>Connectivty</h3>
+                    <h3>Connectivity</h3>
                     <p>Cell coverage is reliable in towns but may be weak in remote areas — download maps and save emergency contacts in advance.</p>
                 </article>
 
@@ -150,6 +159,7 @@
         <p>&copy; 2025 Discover Nueva Vizcaya | Designed by Andrei Enos F. Villapaz</p>
     </footer>
 
+    <button id="scrollTopBtn" title="Go to top">↑</button>
     <script src="scripts/main.js"></script>
 </body>
 

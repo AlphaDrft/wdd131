@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,24 +16,33 @@
         rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">Discover Nueva Vizcaya</h1>
-            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Discover Nueva Vizcaya Logo">
+                <span>Discover Nueva Vizcaya</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="food-culture.html">Food & Culture</a></li>
                 <li><a href="travel-tips.html">Travel Tips</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
-
     <main>
         <section class="hero">
             <img src="images/hero.jpg" alt="Scenic view of Nueva Vizcaya landscape" class="hero-img" loading="lazy">
@@ -47,33 +57,39 @@
         <section class="about">
             <h2>About Nueva Vizcaya</h2>
             <p>
-                Nueva Vizcaya is a province rich in natural beauty and vibrant indigenous culture. 
-                From its majestic waterfalls and scenic mountain trails to its warm and welcoming people, 
+                Nueva Vizcaya is a province rich in natural beauty and vibrant indigenous culture.
+                From its majestic waterfalls and scenic mountain trails to its warm and welcoming people,
                 it's a destination that invites exploration and connection with nature.
             </p>
+        </section>
+        <section class="featured">
+            <h2>Featured Destination</h2>
+            <div class="preview-grid" id="featured-destination"></div>
         </section>
 
         <section class="featured">
             <h2>Top Destinations</h2>
-            <p>Discover the must-see spots of Nueva Vizcaya. From serene waterfalls to impressive dams, each destination offers a unique experience.</p>
-            
+            <p>Discover the must-see spots of Nueva Vizcaya. From serene waterfalls to impressive dams, each destination
+                offers a unique experience.</p>
+
             <div class="preview-grid">
                 <article class="preview-card">
                     <img src="images/imugan-falls.jpg" alt="Imugan Falls" loading="lazy">
-                        <h3>Imugan Falls</h3>
-                        <p>A breathtaking waterfall hidden in the lush mountains of Nueva Vizcaya.</p>
+                    <h3>Imugan Falls</h3>
+                    <p>A breathtaking waterfall hidden in the lush mountains of Nueva Vizcaya.</p>
                 </article>
 
                 <article class="preview-card">
                     <img src="images/capisaan-cave.jpg" alt="Capisaan Cave" loading="lazy">
-                        <h3>Capisaan Cave System</h3>
-                        <p>One of the Philippines' longest cave systems, perfect for explorers.</p>
+                    <h3>Capisaan Cave System</h3>
+                    <p>One of the Philippines' longest cave systems, perfect for explorers.</p>
                 </article>
 
                 <article class="preview-card">
-                    <img src="images/magat-dam.jpeg" alt="Magat Dam">
-                        <h3>Magat Dam</h3>
-                        <p>One of the Southeast Asia's largest dams, offering breathtaking views and a peaceful atmosphere.</p>
+                    <img src="images/magat-dam.jpeg" alt="Magat Dam" loading="lazy">
+                    <h3>Magat Dam</h3>
+                    <p>One of the Southeast Asia's largest dams, offering breathtaking views and a peaceful atmosphere.
+                    </p>
                 </article>
             </div>
 
@@ -85,48 +101,57 @@
         <section class="food-preview">
             <h2>Food & Culture</h2>
             <p>
-                Experience the warmth of Vizcayan hospitality through its local cuisine and colorful traditions. From freshly grilled <strong>tupig</strong> to the rhythmic dances of indigenous festivals, every experience tells a story.
+                Experience the warmth of Vizcayan hospitality through its local cuisine and colorful traditions. From
+                freshly grilled <strong>tupig</strong> to the rhythmic dances of indigenous festivals, every experience
+                tells a story.
             </p>
-            
+
             <div class="preview-grid">
                 <article class="preview-card">
                     <img src="images/pancit-cabagan.jpg" alt="Pancit Cabagan" loading="lazy">
                     <h3>Pancit Cabagan</h3>
-                    <p>A flavorful noodle dish popular across Northern Luzon, often enjoyed with boiled egg and crispy toppings</p>
+                    <p>A flavorful noodle dish popular across Northern Luzon, often enjoyed with boiled egg and crispy
+                        toppings</p>
                 </article>
 
                 <article class="preview-card">
                     <img src="images/tupig.jpg" alt="Tupig" loading="lazy">
                     <h3>Tupig</h3>
-                    <p>Sweet, smoky rice cakes wrapped in banana leaves - a favorite local delicacy in Nueva Vizcaya.</p>
+                    <p>Sweet, smoky rice cakes wrapped in banana leaves - a favorite local delicacy in Nueva Vizcaya.
+                    </p>
                 </article>
 
                 <article class="preview-card">
                     <img src="images/ipon-fish.jpg" alt="Ipon Fish" loading="lazy">
                     <h3>Ipon Fish</h3>
-                    <p>A seasonal  delicacy found in the rivers of the province, known for its unique flavor and texture.</p>
+                    <p>A seasonal delicacy found in the rivers of the province, known for its unique flavor and texture.
+                    </p>
                 </article>
             </div>
 
             <div class="see-more">
                 <a href="food-culture.html" class="btn-submit">See more Food & Culture</a>
             </div>
+        </section>
 
         <section class="tips-preview">
             <h2>Travel Tips</h2>
-            <p>Get ready for your next adventure! Learn about transportation options, the best time to visit, and practical tips to make  your journey smooth and memorable.</p>
+            <p>Get ready for your next adventure! Learn about transportation options, the best time to visit, and
+                practical tips to make your journey smooth and memorable.</p>
 
             <div class="preview-grid">
                 <article class="preview-card">
                     <img src="images/travel-gear.jpg" alt="Travel Gear" loading="lazy">
                     <h3>Pack Light but Smart</h3>
-                    <p>Bring breathable clothing, water bottles, and hiking shoes for Nueva Vizcaya's outdoor adventures.</p>
+                    <p>Bring breathable clothing, water bottles, and hiking shoes for Nueva Vizcaya's outdoor
+                        adventures.</p>
                 </article>
 
                 <article class="preview-card">
                     <img src="images/weather-guide.jpg" alt="Weather Guide" loading="lazy">
                     <h3>Check the Weather</h3>
-                    <p>Best time to visit is during the dry season (November-May when hiking trails and waterfalls are most accessible.</p>
+                    <p>Best time to visit is during the dry season (November-May when hiking trails and waterfalls
+                        are most accessible.</p>
                 </article>
             </div>
 
@@ -140,6 +165,8 @@
         <p>&copy; 2025 Discover Nueva Vizcaya | Designed by Andrei Enos F. Villapaz</p>
     </footer>
 
+    <button id="scrollTopBtn" title="Go to top">↑</button>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
