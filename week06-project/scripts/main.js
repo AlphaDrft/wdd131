@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // === NAVBAR TOGGLE ===
+  // === NAVBAR TOGGLE === //
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // === CONTACT FORM HANDLING ===
+  // === CONTACT FORM HANDLING === //
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // --- Save to localStorage ---
+      // --- Save to localStorage --- //
       const submissions = JSON.parse(localStorage.getItem("contactSubmissions")) || [];
       submissions.push({ name, email, message, date: new Date().toISOString() });
       localStorage.setItem("contactSubmissions", JSON.stringify(submissions));
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-  // === SCROLL TO TOP BUTTON ===
+  // === SCROLL TO TOP BUTTON === //
   const scrollTopBtn = document.getElementById("scrollTopBtn");
   if (scrollTopBtn) {
     window.addEventListener("scroll", () => {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // === LIGHTBOX FEATURE (Gallery) ===
+  // === LIGHTBOX FEATURE (Gallery) === //
   document.querySelectorAll(".gallery-grid img").forEach((img) => {
     img.addEventListener("click", () => {
       const overlay = document.createElement("div");
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // === FEATURED DESTINATIONS ARRAY ===
+  // === FEATURED DESTINATIONS ARRAY === //
   const featuredDestinations = [
     {
       name: "Imugan Falls",
